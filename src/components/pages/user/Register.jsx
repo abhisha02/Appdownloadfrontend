@@ -81,6 +81,7 @@ const Register = () => {
       };
 
       const { data } = await api.post('/api/register/', submitData);
+      console.log(data);
       
       toast.success("Registration successful! Redirecting to login...");
       setTimeout(() => {
