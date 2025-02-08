@@ -100,7 +100,7 @@ const Dashboard = () => {
               >
                 {app.app_icon && (
                   <img 
-                    src={app.app_icon} 
+                    src={app.app.app_icon} 
                     alt={app.name} 
                     className="w-full h-32 object-contain"
                   />
