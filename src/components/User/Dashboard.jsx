@@ -35,7 +35,7 @@ const Dashboard = () => {
         const [appsResponse] = await Promise.all([
           api.get('/apps/available/'),
         ]);
-        console.log('App data:', appsResponse.data); 
+        
         setApps(appsResponse.data);
         setLoading(false);
       } catch (err) {
