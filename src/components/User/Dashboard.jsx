@@ -99,13 +99,7 @@ const Dashboard = () => {
                 key={app.id} 
                 className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg ring-1 ring-gray-200 dark:ring-gray-700"
               >
-                {app.app_icon && (
-                  <img 
-                    src={app.app_icon} 
-                    alt={app.name} 
-                    className="w-full h-32 object-contain"
-                  />
-                )}
+               
                 <div className="p-4">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{app.name}</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-2">{app.description}</p>
