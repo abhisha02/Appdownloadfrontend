@@ -35,6 +35,7 @@ const Dashboard = () => {
         const [appsResponse] = await Promise.all([
           api.get('/apps/available/'),
         ]);
+        console.log('App data:', appsResponse.data); 
         setApps(appsResponse.data);
         setLoading(false);
       } catch (err) {
@@ -100,7 +101,7 @@ const Dashboard = () => {
               >
                 {app.app_icon && (
                   <img 
-                    src={app.app.app_icon} 
+                    src={app.app_icon} 
                     alt={app.name} 
                     className="w-full h-32 object-contain"
                   />
